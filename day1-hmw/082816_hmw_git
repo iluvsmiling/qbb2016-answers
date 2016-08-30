@@ -9,3 +9,4 @@ samtools sort -n SRR072893.SAM -o SRR072893.bam
 # sort required for indexing
 samtools sort SRR072893.bam -o ../SRR072893_sorted.bam
 samtools index -b ../SRR072893_sorted.bam
+stringtie SRR072893_sorted.bam -G ../BDGP6/BDGP6.Ensembl.85.gtf -p 3 -o BDGP6_Stringtie.gtf -B -e
