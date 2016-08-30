@@ -1,0 +1,11 @@
+# create FASTQC report
+fastqc SRR072893.fastq
+
+#Use hisat2 to map reads
+
+hisat2 -p3 -x BDGP6 -U ../day1-homework/SRR072893.fastq -S ../day1-homework/SRR072893.SAM
+samtools sort -n SRR072893.SAM -o SRR072893.bam
+
+# sort required for indexing
+samtools sort SRR072893.bam -o ../SRR072893_sorted.bam
+samtools index -b ../SRR072893_sorted.bam
