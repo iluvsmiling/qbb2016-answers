@@ -39,7 +39,9 @@ df_log2 = np.log(df_fpkm_f2["FPKM"])
 
 """PLOT""" 
 df_combo = (df_log, df_log2)
-plt.boxplot(df_combo)
+labels_x = sys.argv[1], sys.argv[2]
+plt.ylabel("FPKM")
+plt.boxplot(df_combo, labels = labels_x)
 plt.show()
 
 
