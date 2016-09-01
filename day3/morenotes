@@ -1,0 +1,14 @@
+reader = FASTAReader((open("foo.txt")))
+
+reader.next()
+reader._iter_()
+
+reader2= FASTAReader(open("foo.txt"))
+reader2.next()
+
+FASTAReader::next(reader2)
+
+
+when i call next, it hs self as firstargument. its the specific instance. here its reader, its also reader here. if youre reading two different FASTA files,
+
+

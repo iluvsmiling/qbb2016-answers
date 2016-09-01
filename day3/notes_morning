@@ -1,0 +1,91 @@
+simplest data
+
+then lists, tuples (two association)
+
+dictionaries
+
+SEQUENCE SIMILARITY
+relationships between sequnces
+- mapping
+- evolutionary comparisons
+
+multiple alignment
+phylogeny orthologs
+
+scoring alignments
+- given an alignment and scoring scheme
+	
+d=1 and sigma(s,t) =
+
+1 if s=t
+-1 otherwise
+
+Algorithms:
+- greedy: two nt in the beginning. do i get a better score if i gap or align
+- Optimal: provably find the right answer
+(Smith Waterman) 
+it organizes the problem thats more efficient
+considrs small alignments first, then the whole. Unlike greedy, it ensures the rigt answer globally, not just locally
+slow for large sequences
+
+Graph: DOT PLOTS
+limit 4 characters in a row before you color
+when you see shifts off diagonal, 
+suddenly our diagonal moves off the main line by a couple of pixels
+ there is an insertion of len 2
+there's an inversion (alignment be forward strand of 1 and reverse of another)
+
+Word Matchers: 
+ think of regions of 4 identityt as two words with similar sequences
+ the 5mir (AAAT) is same over there
+ find places where they shared identical words, we pinpoint similarity
+ APPROXIMATE LOCAL ALIGNMENT
+	Approximating Smith Waterman
+	only look near these regions
+		use filtration algorithm
+		call these seeds (fast), then gradually filtr those candidates with computationally exp methods
+	Seeds algorithms:
+		FASTA - for DNA, all exact matches from 4 to 6 length
+			looks across dot plots, how many of these seeds are on the diagnol
+		BLAST - all exact matches of 11 or longer
+			keeps all seeds, then ask do you have another exact match on the same diagnol within a similar distance
+
+	Scoring Matrix -- Filtration
+		FASTA: 
+			drop some of these lines from candidates
+			banded extension
+		BLAST: 
+			scored bounded extension
+
+
+Performing initial seed match
+	Use hash table
+		implementation of dictionary
+		it relates a value with a key
+		a hash table provide a mapping from keys to values
+		
+	target = acaggaggga
+	take each word
+
+	ACG > 0
+	CGA > 1
+	GAG > 2, 5
+	GGA > 3, 7
+
+	n-3 3-tuples;
+	n-3 inserts; 
+	Build Time O(n)
+ 
+Lookups:
+QUery: GGAGCCC
+GGA > 3, 7
+GAG > 4, 8
+
+pathological case:
+	AAAAAATAAAA
+	AAAAAACAAAA   no 11 bp
+
+
+
+Wrote program 00-parse-one-fasta
+command: ./00-parse-one-fsta < subset.fa | less -S 	

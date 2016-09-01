@@ -1,34 +1,34 @@
 #!/usr/bin/env python
 
 """
-Input: kmer_matcher.py target.fa query.fa k
+Input: 1_d3_matcher.py target.fa query.fa k
 Output: target_seq_name target_start query_start k 
 
 """
 
 import sys
-import fasta
+import fasta_fixed
 
-matchr(open(sys.argv[1]), open(sys.argv[2]), sys.argv[3])
 
-def matchr(target, query, k):
-    k = int(k)
+def x (target, query):
     kmer_beg = {}
-    target_genetarget_gene = {}
-
-    for ident, sequence in fasta.FASTAReader(query):
+    target_gene = {}
+   
+    for ident, sequence in fasta_fixed.FASTAReader(query):
         sequence = sequence.upper()
-        for i in range(0,len(sequence) - k):
-            kmer = sequence[i:i+k]
-            if kmer in query_n1:
-                query_n1[kmer].append(i)
-            if kmer in kmer_beg:
-                query_n1[kmer]=[]
-                query_n1[kmer].append(i)
-                query_n2[kmer]=[]
-                query_n2[kmer].append(target_gene[kmer])
 
-    for ident, sequence in fasta.FASTAReader(target):
+    for i in range(0,len(sequence) - k):
+        kmer = sequence[i:i+k]
+        if kmer in query_n1:
+            query_n1[kmer].append(i)
+        if kmer in kmer_beg:
+            query_n1[kmer]=[]
+            query_n1[kmer].append(i)
+            query_n2[kmer]=[]
+            query_n2[kmer].append(target_gene[kmer])
+
+   
+    for ident, sequence in fasta_fixed.FASTAReader(target):
         sequence = sequence.upper()
         for i in range(0, len(sequence) - k):
             kmer = sequence[i:i+k]
@@ -52,4 +52,7 @@ def matchr(target, query, k):
         print "Target_start: ", kmer_beg[ident]
         print "Query_start: ", query_n1[ident]
     
+target = open(sys.argv[1])
+query = open(sys.argv[2])
+
 

@@ -1,0 +1,35 @@
+#find differences in expression between 2 groups
+# statsmodels for ttest, python
+
+
+
+
+
+import sys
+import numpy as np
+from statsmodels.stats.weightstats import as ttest
+
+def load_fpkm_from_ctab(my_ctab_filename):
+	fpkm_values = []
+	for i, line in enumerate( open(my_ctab_filename)
+
+fpkm_values = []
+for i, line in enumerate(sys.stdin):
+        if i==0:
+                continue
+        fields = line.rstrip("\r\n").split("\t")
+        fpkm = float(fields[11])
+        fpkm_values.append(fpkm)
+
+print fpkm_values
+
+a = np.array(fpkm_values)
+
+print a
+print a.shape
+print a.dtype
+##.py < ctab
+~             
+
+print "ttest"
+print ttest (a,b)

@@ -1,0 +1,500 @@
+  101  vi 02-argument.py 
+  102  ./02-argument.py 
+  103  ./02-argument.py 
+  104  vi 02-argument.py 
+  105  ./02-argument.py Nina
+  106  vi 02-argument.py 
+  107  ./02-argument.py Nina
+  108  vi 02-argument.py 
+  109  vi 02-argument.py 
+  110  mate 03-arguments.py
+  111  cmd s
+  112  s
+  113  ./03-arguments.py 
+  114  ./03-arguments.py nina
+  115  chmod +x 03-arguments.py 
+  116  vi 03-arguments.py 
+  117  vi 07-next.py 
+  118  vi 07-next.py 
+  119  chmod +x 07-next.py 
+  120  ls
+  121  ./06-First.py 
+  122  ./04-types.py 
+  123  ./06-First.py 
+  124  vi 06-First.py 
+  125  ./06-First.py 
+  126  vi 06-First.py input
+  127  ./06-First.py input
+  128  vi 06-First.py 
+  129  vi 06-First.py 
+  130  ./06-First.py temp.fa | less
+  131  ./06-First.py temp.fa 
+  132  vi 06-First.py 
+  133  vi 06-First.py 
+  134  ls
+  135  less 07-next.py 
+  136  less 07-next.py 
+  137  ls
+  138  cd ../day2-lunch/
+  139  ls
+  140  less -S SRR072893.SAM 
+  141  less -S SRR072893.SAM 
+  142  cd data/fastq/
+  143  ls
+  144  cd ..
+  145  ls day1-homework/
+  146  mkdir day2-lunch/
+  147  less -S day1-homework/SRR072893.SAM 
+  148  samtools view day1-homework/SRR072893.SAM | less -S
+  149  cd day1-homework/
+  150  cp SRR072893.SAM ../day2-lunch/
+  151  cd ../day2-lunch/
+  152  ls
+  153  list.count(SRR072893.SAM)
+  154  vi d2lunch.py
+  155  chmod +x d2lunch.py 
+  156  ./ d2lunch.py 
+  157  ./d2lunch.py 
+  158  samtools view day1-homework/SRR072893.SAM | less -S
+  159   | less -S
+  160  less -S SRR072893.SAM
+  161  samtools view day1-homework/SRR072893.SAM | less -S
+  162  samtools view SRR072893.SAM | less -S
+  163  less -S SRR072893.SAM 
+  164  ls
+  165  ls
+  166  cd ..
+  167  ls
+  168  cd ~/qbb2016-answers/day2-morning/
+  169  ls
+  170  vi 06-First.py 
+  171  vi 07-next.py 
+  172  cd ..
+  173  ls
+  174  ls
+  175  cd day2-morning/
+  176  ls
+  177  cd ..
+  178  mv ~/data/day2-lunch/ .
+  179  l
+  180  ls
+  181  cd day2-
+  182  cd day2-lunch/
+  183  ls
+  184  git status
+  185  git add
+  186  git add day2*
+  187  cd .. 
+  188  ls
+  189  git status
+  190  git add day2*
+  191  git add day2-lunch/
+  192  cd day2-lunch/
+  193  ls
+  194  less -S SRR072893.SAM 
+  195  less -S SRR072893.SAM 
+  196  less -S SRR072893.SAM 
+  197  vi d2lunch.py 
+  198  ls
+  199  chmod +x d2lunch.py 
+  200  ./d2lunch.py 
+  201  vi d2lunch.py 
+  202  ./d2lunch.py 
+  203  less -S SRR072893.SAM 
+  204  vi d2lunch.py 
+  205  ./d2lunch.py 
+  206  less SRR072893.SAM 
+  207  samtools
+  208  ls
+  209  vi d2lunch.py 
+  210  ./d2lunch.py 
+  211  vi d2lunch.py 
+  212  ./d2lunch.py 
+  213  ls
+  214  less SRR072893.SAM 
+  215  less SRR072893.SAM 
+  216  cut -f 16 SRR072893.SAM | echo
+  217  cut -f 16 SRR072893.SAM >> cut16.txt
+  218  less cut16.txt 
+  219  less *sam
+  220  less *SAM
+  221  ls
+  222  vi d2lunch_2.py
+  223  cp d2lunch.py d2lunch_2.py
+  224  vi d2lunch_2.py 
+  225  vi d2lunch_2.py 
+  226  vi exercise,py
+  227  chmod +x exercise,py 
+  228  ls
+  229  ./exercise,py 
+  230  vi exercise,py 
+  231  ./exercise,py 
+  232  vi exercise,py 
+  233  vi 01-functions.py
+  234  python 01-functions.py 
+  235  vi 01-functions.py
+  236  python 01-functions.py 
+  237  python 01-functions.py ;
+  238  vi 01-functions.py
+  239  python 01-functions.py 
+  240  vi 01-functions.py
+  241  python 01-functions.py 
+  242  python 01-functions.py ;
+  243  vi 01-functions.py
+  244  python 01-functions.py ;
+  245  vi 01-functions.py
+  246  mate 03-none.py
+  247  mate ./04-bindings.py
+  248  ls
+  249  cd qbb2016-answers/day2-lunch/
+  250  ls
+  251  less exercise,py 
+  252  less d2lunch_2.py 
+  253  cd ..
+  254  ls
+  255  cd day2-hmw/
+  256  ls
+  257  cd
+  258  l
+  259  ls
+  260  vi 083016_hmw 
+  261  ls data/day1-homework/
+  262  vi 083016_hmw 
+  263  vi 083016_hmw 
+  264  cd ~/data/day1-homework/
+  265  ls
+  266  less t_data.ctab 
+  267  less e_data.ctab 
+  268  less t_data.ctab 
+  269  less e_data.ctab 
+  270  less t_data.ctab 
+  271  less t_data.ctab 
+  272  cp t_data.ctab ~/qbb2016-answers/day2-hmw/
+  273  cd ~/qbb2016-answers/day2-hmw/
+  274  ls
+  275  python numb1.py 
+  276  vi numb1.py 
+  277  python numb1.py FlyBaseID.txt 
+  278  python numb1.py FlyBaseID.txt >> numb1.result
+  279  less numb1.result 
+  280  less t_data.ctab 
+  281  less t_data.ctab 
+  282  less numb1.result 
+  283  less t_data.ctab 
+  284  python numb1.py | head -n 100>> numb1.res
+  285  python numb1.py FlyBaseID.txt| head -n 100>> numb1.res
+  286  python numb1.py FlyBaseID.txt| head -n 100>> numb1.res
+  287  python numb1.py FlyBaseID.txt| head -n 100>> numb1.res
+  288  vi numb1.py 
+  289  cd
+  290  vi 083016_hmw 
+  291  cd
+  292  cd qbb2016-answers/day2-hmw/
+  293  ls
+  294  less numb1.res
+  295  less numb1.result 
+  296  less FlyBaseID.txt 
+  297  vi numb1.py 
+  298  python numb1.py FlyBaseID.txt >> numb1.result2
+  299  less numb1.result2 
+  300  less numb1.py 
+  301  less FlyBaseID.txt 
+  302  less t_data.ctab 
+  303  less FlyBaseID.txt 
+  304  less numb1.
+  305  less numb1.py 
+  306  python numb1.py 
+  307  python numb1.py FlyBaseID.txt 
+  308  less t_data.ctab 
+  309  ls
+  310  cd qbb2016-answers/
+  311  ls
+  312  cd day2-lunch/
+  313  ls
+  314  less exercise,py 
+  315  ls
+  316  less 03-none.py 
+  317  less 01-functions.py 
+  318  ls
+  319  cd qbb2016-answers/
+  320  ls
+  321  mkdir day2-hmw/
+  322  cd
+  323  vi 083016_hmw
+  324  ls
+  325  vi 083016_hmw
+  326  vi text.txt
+  327  python text.txt < [A
+  328  vi text.txt
+  329  vi text.txt
+  330  ls
+  331  cd qbb2016-answers/day2-lunch/
+  332  ls
+  333  less d2lunch.py 
+  334  ll
+  335  ls
+  336  ls -l
+  337  cd ..
+  338  ls
+  339  vi generic_file_parsing.py
+  340  vi generic_file_parsing.py
+  341  ls day1-
+  342  ls day1-hmw/
+  343  cd ~/data/day1-homework/
+  344  ls
+  345  less t_data.ctab 
+  346  less -S t_data.ctab 
+  347  cd ~/qbb2016-answers/day2-hmw/
+  348  ls
+  349  vi numb1.py 
+  350  python numb1.py FlyBaseID.txt 
+  351  less FlyBaseID.txt 
+  352  vi numb1.py 
+  353  python numb1.py FlyBaseID.txt 
+  354  less FlyBaseID.txt 
+  355  vi numb1.py 
+  356  python numb1.py FlyBaseID.txt 
+  357  vi numb1.py 
+  358  python numb1.py FlyBaseID.txt 
+  359  vi numb1.py 
+  360  python numb1.py FlyBaseID.txt 
+  361  vi numb1.py 
+  362  python numb1.py FlyBaseID.txt 
+  363  vi numb1.py 
+  364  python numb1.py FlyBaseID.txt 
+  365  vi numb1.py 
+  366  python numb1.py FlyBaseID.txt 
+  367  vi numb1.py 
+  368  python numb1.py FlyBaseID.txt 
+  369  vi numb1.py 
+  370  python numb1.py FlyBaseID.txt 
+  371  cd -
+  372  cd -
+  373  cd ../day2-lunch/
+  374  ls
+  375  vi 03-none.py 
+  376  vi d2lunch
+  377  vi d2lunch.py 
+  378  vi d2lunch_2.py 
+  379  vi 04-bindings.py 
+  380  rm cut16.txt 
+  381  cd ../day2-morning/
+  382  ls
+  383  vi 07-next.py 
+  384  vi 06-First.py 
+  385  cd ../day2-hmw/
+  386  vi numb2.py
+  387  python numb2.py 
+  388  vi numb2.py
+  389  python numb2.py 
+  390  python numb2.py FlyBaseID.txt t_data.ctab 
+  391  vi numb2.py 
+  392  python numb2.py 
+  393  python numb2.py FlyBaseID.txt t_data.ctab 
+  394  vi numb2.py 
+  395  python numb2.py 
+  396  vi numb2.py 
+  397  cd ..
+  398  git status
+  399  git ad
+  400  git add
+  401  git add day2*
+  402  git add day2-hmw/
+  403  git add day2-lunch/
+  404  git status
+  405  git commit -m "This hmw is on fire" 
+  406  git push
+  407  ls
+  408  cd qbb2016-answers/day2-hmw/
+  409  ls
+  410  vi FlyBaseID.txt
+  411  ls
+  412  less FlyBaseID.txt 
+  413  less FlyBaseID.txt 
+  414  cd ../day2-lunch/
+  415  ls
+  416  samtools view SRR072893.
+  417  samtools view SRR072893.SAM | less -S
+  418  [A
+  419  [A
+  420  samtools view SRR072893.SAM | less -S
+  421  cd ../day2-hmw/
+  422  ls
+  423  less -S FlyBaseID.txt 
+  424  vi numb1.py
+  425  vi numb1.py
+  426  python numb1.py 
+  427  vi numb1.py
+  428  python numb1.py 
+  429  vi numb1.py
+  430  vi numb1.py
+  431  python numb1.py FlyBaseID.txt 
+  432  python numb1.py FlyBaseID.txt | vi
+  433  ls
+  434  python numb1.py FlyBaseID.txt | vi result.txt
+  435  ls
+  436  python numb1.py FlyBaseID.txt 
+  437  less FlyBaseID.txt 
+  438  vi numb1.py
+  439  python numb1.py FlyBaseID.txt 
+  440  ls
+  441  vi lineex
+  442  vi numb2.py 
+  443  vi numb1.py 
+  444  vi notes_morning
+  445  vi notes_morning
+  446  cd ..
+  447  mkdir day3
+  448  cd -
+  449  mv notes_morning ../day3/
+  450  cd ../day3/
+  451  ls
+  452  vi notes_morning 
+  453  ls
+  454  gffread ~/data/results/
+  455  cd
+  456  ls
+  457  cd data/day1-homework/
+  458  ls
+  459  find . -name *gtf
+  460  cp BDGP6_stringtie.gtf ~/qbb2016-answers/day3/
+  461  cd -
+  462  cd qbb2016-answers/day3/
+  463  ls
+  464  ls
+  465  gffread BDGP6_stringtie.gtf -g ~/data/BDGP6/BDGP6.fa -r 2L:1-1000000 -w subset.fa
+  466  ls
+  467  less subset.fa 
+  468  wc subset.fa 
+  469  man wc
+  470  less subset.fa 
+  471  head subset.fa 
+  472  grep "^>" subset.fa | wc -l 
+  473  ls
+  474  vi 00-parse-one-fasta
+  475  chmod +x 00-parse-one-fasta 
+  476  ls
+  477  ./00-parse-one-fasta 
+  478  ./00-parse-one-fasta subset.fa 
+  479  ./00-parse-one-fasta < subset.fa | less -S
+  480  cp 00-parse-one-fasta 01-fasta.py
+  481  ls
+  482  mv 00-parse-one-fasta 00-parse-one-fasta.py
+  483  ls
+  484  vi 01-fasta.py 
+  485  mate 01-fasta.py 
+  486  head subset.fa 
+  487  ls
+  488  less BDGP6_stringtie.gtf 
+  489  less subset.fa 
+  490  python 01-fasta.py 
+  491  vi 01-fasta.py 
+  492  python 01-fasta.py 
+  493  python 01-fasta.py 
+  494  python 01-fasta.py 
+  495  python 01-fasta.py 
+  496  ls
+  497  ls
+  498  cp 01-fasta.py 02-fasta-iterator.py
+  499  vi 02-fasta-iterator.py 
+  500  less 02-fasta-iterator.py 
+  501  cd qbb2016-answers/day3/
+  502  ls
+  503  history > hist6
+  504  ls
+  505  less hist6 
+  506  gffread BDGP6_stringtie.gtf -g ~/data/BDGP6/BDGP6.fa -r 2L:1-1000000 -w subset.fa
+  507  gffread BDGP6_stringtie.gtf -g ~/data/BDGP6/BDGP6.fa -r 2L:1-1000000 -w subset.fa
+  508  ls
+  509  ls
+  510  ls
+  511  less subset.fa 
+  512  ls -lt
+  513  python 00-kmercounter.py 
+  514  python 00-kmercounter.py k
+  515  python 00-kmercounter.py k
+  516  python 00-kmercounter.py subset.fa 
+  517  python 00-kmercounter.py subset.fa k
+  518  python 00-kmercounter.py subset.fa 
+  519  python 00-kmercounter.py subset.fa 
+  520  ls
+  521  python 00-kmercounter.py subset.fa 
+  522  python 00-kmercounter.py 11 <subset.fa 
+  523  python 00-kmercounter.py subset.fa 
+  524  ./00-kmercounter.py 11 < subset.fa 
+  525  ls
+  526  less fasta_Reader.py
+  527  less 01-fasta.py 
+  528  less fasta_Reader.py
+  529  vi fasta2.py
+  530  vi fasta2.py
+  531  ./00-kmercounter.py 11 < subset.fa 
+  532  vi fasta2.py
+  533  ./00-kmercounter.py 11 < subset.fa 
+  534  ./00-kmercounter.py 11 < subset.fa 
+  535  ./00-kmercounter.py 11 < subset.fa 
+  536  vi 00-kmercounter.py 
+  537  ./00-kmercounter.py 11 < subset.fa 
+  538  ./00-kmercounter.py 11 < subset.fa 
+  539  ./00-kmercounter.py 11 < subset.fa | head -n 20
+  540  head -n 20 subset.fa
+  541  less subset.fa 
+  542  less fasta2.py
+  543  ls
+  544  ls -lt
+  545  cp 00-kmercounter.py 02-kmercounter2
+  546  vi 02-kmercounter2 
+  547  mate 02-kmercounter2 
+  548  ./02-kmercounter2 11 < subset.fa | less -S
+  549  less subset.fa 
+  550  ./02-kmercounter2 11 < subset.fa | less -S
+  551  mate 02-kmercounter2 
+  552  ./02-kmercounter2 11 < subset.fa | less -S
+  553  ./02-kmercounter2 11 < subset.fa | less -S
+  554  ./02-kmercounter2 11 < subset.fa | less -S
+  555  ./02-kmercounter2 11 < subset.fa | less -S
+  556  ./02-kmercounter2 11 < subset.fa | less -S
+  557  ./02-kmercounter2 11 < subset.fa | less -S
+  558  ./02-kmercounter2 11 < subset.fa | less -S
+  559  ./02-kmercounter2 11 < subset.fa | less -S
+  560  ./02-kmercounter2 11 < subset.fa | less -S
+  561  ./02-kmercounter2 11 < subset.fa | less -S
+  562  ./02-kmercounter2 11 < subset.fa
+  563  ./02-kmercounter2 11 < subset.fa
+  564  ls
+  565  vi explain_ex2 
+  566  vi 03-numpy.py
+  567  ls
+  568  chmod +x 03-numpy.py 
+  569  ls
+  570  ./03-numpy.py < ~/data/day1-homework/t_data.ctab 
+  571  ./03-numpy.py < ~/data/day1-homework/t_data.ctab 
+  572  ./03-numpy.py < ~/data/day1-homework/t_data.ctab 
+  573  ./03-numpy.py < ~/data/day1-homework/t_data.ctab 
+  574  ./03-numpy.py < ~/data/day1-homework/e_data.ctab 
+  575  ls
+  576  cd ~/data/results/
+  577  ls
+  578  tar xvf SRP004442.stringtie.tar.gz 
+  579  l
+  580  ls
+  581  cd stringtie/
+  582  ls
+  583  cd -
+  584  cd ~/qbb2016-answers/day3/
+  585  vi ttest
+  586  ls
+  587  ls -lt
+  588  less ~/data/day1-homework/
+  589  less ~/data/day1-homework/t_data.ctab 
+  590  vi hmw
+  591  ls -lat
+  592  ls fasta2*
+  593  rm fasta2*
+  594  rm hist*
+  595  ls -lt
+  596  vi hmw
+  597  vi hmw
+  598  ls -la
+  599  ls -lt
+  600  history > hist7
