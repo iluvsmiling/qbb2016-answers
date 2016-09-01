@@ -1,0 +1,37 @@
+# 1 finding kmer matches
+	right no, we're keeping count. now we need to keep positions.
+		create a list (two passes, first pass - go through target and populate diction where keys are kmers and words are positions)
+		see if query has a match in your target dictionary
+		if you find a match, you keep track position of target (and w're know position in query bec we're enumerating it)
+	how to keep track of position
+	return the position , whre match occurs
+	target : .fa
+	query: link
+
+#### START
+
+import sys, 
+
+# define dictionary; will match 
+kmer_matches={}
+
+
+### Remember
+- target_sequence_name = ID from FASTAReader
+- target_start = sequence[0]
+- query_start = 
+- k-mer
+
+Calculate all k-mers. Take first k-mer and align it with all places in target
+
+# 2 BLAST ungap extension
+
+# 1 FIND SEED-LIKE SEQUNCES USING INDEX
+
+query:droYak.fa
+target: subset.fa
+
+use new fasta
+
+implement a script that finds matching kmers between a single query and a database of targets
+
