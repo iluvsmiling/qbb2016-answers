@@ -1,0 +1,76 @@
+have a component that is learnable
+
+a few variables that computer learns, given the data input (training data)
+
+SUPERVISED LEARNING
+- X, input var or vector
+- Y , output, some vector of outputs
+- Goal: learn this function f. that will mapp values of x to y. And have it be a true, good predition of true y
+
+Learn relationship through learnng data
+
+**How is this different from modeling , fitting data
+
+- Regression: response (y) is continuous 
+- Classification: response is categorical. given x, tell me which class x belongs to. here is a sequence...is it a promoter, intronic, etc
+
+UNSUPERVISED LEARNING
+
+- X, input variable or vector, observations
+- We are very good at collecting data, but getting labeled data...we can sequence a lot of things but harder to tell you what it is
+
+-Two problems:
+	A) dimension reduction - find reduced dim that will tell you info about x....i.e. visualization. 
+	20,000 genes. => put this in 2d or 3d space. PCA
+	Flow cytometry - looking at 35 parameters/markers at once. 	
+
+	
+	B) clustering - try to identify groups within X that are similar to other, whos expression profiles are similar.
+	
+
+:LINEAR REGRESSION:	
+
+- find correlation coefficient for a given X data input and then predict y
+
+f(x) = B_0 + sum(Bj* X_j) over p, j = 1
+The learning problem: find coefficients.
+
+find a plane that minimizes dimensions?
+	** bias? it loses information. 
+	bias variance trade-off : overtraining can be a problem. 
+
+
+***The learning problem is to find coefficients to predict Y. but what does that have to do with dimension reduction (i.e. finding the plane that condenses all your datapoints).**
+
+	dimension reduction can be done just to understand your data, not necessarily to find y
+
+ PCA: unsupervised dimension reduction
+
+- smallest and largest PC. 
+
+Screeplot
+- Evalues vs num of dimensions
+
+Microarray paper:
+	sorted 
+	PCA 
+most successful ML: supervector machine,
+	the idea of projecting your data into an even higher dim space
+	kernel methd, data is non-linearly transformed
+		if you find a linear separator in that higher dim space, you can use that
+
+programming:
+certain modules are slow to load like matplotlib
+
+py.lin is a nice module that detects errors
+
+
+QUESTIONS:
+
+******Is there a stat class to understand fMRI or genomics-- design algorihms?
+
+
+
+
+
+
