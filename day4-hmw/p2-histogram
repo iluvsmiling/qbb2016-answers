@@ -23,10 +23,6 @@ fpkm_log = np.log10(fpkm_sel)
 
 plt.figure()
 plt.hist(fpkm_log)                  
-
-#close here?? plt.close()  
-# set range
-# Why does this only work when I put this before plt.figure()
 minimum = np.min(fpkm_log)
 maximum = np.max(fpkm_log)   
 
