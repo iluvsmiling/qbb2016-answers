@@ -9,7 +9,7 @@ import sys
 
 
 FlyID = open(sys.argv[1])
-c_tab = open(sys.argv[2]
+c_tab = open(sys.argv[2])
 
 ## Find AC (col 0) in gene_name (col 9) 
 ## if matched, print line from c_tab
@@ -18,8 +18,12 @@ Fly_dic = {}
 
 for line in FlyID:
 	field = line.rstrip("\r\n").split()
+	if len(field) >= 2:
+		continue
 	Uniprot_col1 = field[1]
 	ID_col0	= field[0]
+	print (field[0])
+	print (field[1])
 	Fly_dic[ID_col0] = Uniprot_col1
 
 for line in c_tab:
