@@ -5,7 +5,7 @@ file_name = sys.argv[1]
 file = open(file_name)
 for line in file.readlines():
         if "DROME" in line:
-                continue
+                pass
         item = line.rstrip("\r\n").split()
 	if len(item) >= 4 :
 

@@ -18,19 +18,18 @@ Fly_dic = {}
 
 for line in FlyID:
 	field = line.rstrip("\r\n").split()
-	if len(field) >= 2:
-		continue
 	Uniprot_col1 = field[1]
 	ID_col0	= field[0]
-	print (field[0])
-	print (field[1])
 	Fly_dic[ID_col0] = Uniprot_col1
 
 for line in c_tab:
 	match = line.rstrip("\r\n").split()
 	gene_name = match[8]
-	if match in Fly_dic:
-		print(match)
+	if gene_name in Fly_dic:
+		print match 
+	else:
+		print "No match"
+
 
 
 
