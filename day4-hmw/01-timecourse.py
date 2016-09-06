@@ -29,6 +29,9 @@ for sample in df_meta[ df_roi ][ "sample" ]:
     
     df_roi2 = df[ "t_name" ] == "FBtr0331261"
     fem_Sxl.append( df[ df_roi2 ][ "FPKM" ].values)
+
+## Error:   File "pandas/parser.pyx", line 523, in pandas.parser.TextReader.__cinit__ (pandas/parser.c:5214)
+## pandas.io.common.EmptyDataError: No columns to parse from file
     
 plt.figure()
 plt.plot( fem_Sxl )
