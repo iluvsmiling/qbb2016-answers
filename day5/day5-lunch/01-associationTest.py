@@ -8,12 +8,6 @@ import statsmodels.api as sm
 ctab = open(sys.argv[1])
 btab = open(sys.argv[2])
 
-# align FPKM and mean_coveredbases
-# do these correlate?
-# use OLS
-
-#take FPKM and put into list
-
 y = []
 x = []
 good_genes=["3R", "3L", "2R", "2L", "X", "Y", "4"]
