@@ -36,12 +36,12 @@ print len (query_start)
 #find kmer within sequence
 #print ident (target_name) with kmer
 
-for i, sequence in fasta_fixed.FASTAReader(target):
+for sequence in fasta_fixed.FASTAReader(target):
         sequence = sequence.upper()
-        target_start = i
-        kmer = sequence[i : i+k_len]
         for i in range(0, len(sequence)-k_len):
-            if kmer in query_start:
+            kmer = sequence[i : i+k_len]
+            target_start = i       
+       if kmer in query_start:
                 print ("Target Seq Name: " + ident + "Target Start: " + target_start + "Query Start:" + query_start +"Kmer:" + kmer)
 
 
