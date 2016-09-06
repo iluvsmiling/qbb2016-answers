@@ -60,7 +60,7 @@ for sample in df_replicates[df_roi_m2]["sample"]:
     df = pd.read_table(filename)
     
     df_roi_f4 = df["t_name"] == "FBtr0331261"
-    male_rep.append( df[ df_roi_f4 ]["FPKM"].values)
+    male_reps.append( df[ df_roi_f4 ]["FPKM"].values)
 
 # Show time!
 plt.figure()

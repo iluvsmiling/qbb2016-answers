@@ -9,7 +9,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-df_n1 = pd.read_table(sys.argv[1])
+df_n1 = pd.read_table(sys.argv[1]) 
 df_n2 = pd.read_table(sys.argv[2])
 
 fpkm_n1 = df_n1["FPKM"].values
@@ -20,9 +20,11 @@ fpkm_n2 = df_n2["FPKM"].values
 #OH WAIT, can i do this:
 
 M_n1 = np.log(fpkm_n1 + 1) - np.log(fpkm_n2 + 1)
-A_n1 = 0.5*(np.log(fpkm_n1 + 1) + np.log(fpkm_n2 + 1)
+A_n1 = 0.5*(np.log(fpkm_n1 + 1) + np.log(fpkm_n2 + 1))
 
-#error with plt.figure()
+#Error: pandas.io.common.EmptyDataError: No columns to parse from file
+##Copying someone else's code (see other p3-MA file) causes same error
+## Error is coming from input file or pandas package. This code should work!
 
 plt.figure()
 plt.scatter(A_n1, M_n1)
