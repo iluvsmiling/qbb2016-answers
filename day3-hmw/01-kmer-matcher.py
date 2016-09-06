@@ -26,25 +26,23 @@ for ident, sequence in fasta_fixed.FASTAReader(query):
         else:
             query_start[kmer].append(q_start)
 
-print kmer, query_start[kmer]
-#skip first line of query
+print kmer, query_start[kmer],
 
 #parse line in target
 #find kmer within sequence
-# #print ident (target_name) with kmer
-#
-# for ident, sequence in fasta_fixed.FASTAReader(target):
-#     sequence = sequence.upper()
-#     target_start = i
-#     end = i+k_len
-#     kmer = sequence[i : i+k_len]
-#     if kmer in query_start:
-#         print ("Target Seq Name: " + ident +
-#         "Target Start: " + target_start +
-#         "Query Start:" + query_start +
-#         "Kmer:" + kmer)
-#  #   else:
-#  #      print "error"
+#print ident (target_name) with kmer
+
+for ident, sequence in fasta_fixed.FASTAReader(target):
+        sequence = sequence.upper()
+        target_start = i
+        end = i+k_len
+        kmer = sequence[i : i+k_len]
+        if kmer in query_start: 
+            print ("Target Seq Name: " + ident + "Target Start: " + target_start + "Query Start:" + query_start +"Kmer:" + kmer)
+    
+   
+        else:
+            print "error"
 
 
 
