@@ -63,6 +63,10 @@ for sample in df_replicates[df_roi_m2]["sample"]:
     male_reps.append( df[ df_roi_f4 ]["FPKM"].values)
 
 # Show time!
+##Error: pandas.io.common.EmptyDataError: No columns to parse from file
+## Error is coming from input file or pandas package. This code should work!
+
+
 plt.figure()
 
 labels_1 = np.array([0,1,2,3,4,5,6,7,8])
