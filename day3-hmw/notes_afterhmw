@@ -1,0 +1,71 @@
+Three STrategies:
+1. hash all target sequences
+	scan over query
+2. hash each target then scan query
+
+3. hash query
+4 hash both 
+
+Problem 1:
+
+- implement a script that finds matching kmers between query and target
+- input: 
+	target.fa =  
+	query. fa
+	k
+- output
+	target seq name = line[0] after carrot
+	target start = position of 
+	query start
+	kmer seq
+
+strategy
+- define kmer
+
+
+
+
+Problem 2:
+
+hit at 390, 391. 
+extend by 2 bps
+
+
+Data = open(sys.argv[1])
+query = sys.argv[2]
+
+
+for line
+
+haversat
+gungne
+	hashed query
+	look up 
+	look forward
+		loop , looking forward until you get a mismatch
+		then you stop
+		* if you just consider the first match, you dont need to go back
+		* 
+
+1 kmer_counter to kmer_matcher
+
+usage: kmer.py target.fa query.fa k
+output: target_ID target_start query_start k
+	1000 lines, k = 11
+
+
+import sys, fasta_fixed
+
+query_fa = open (sys.argv[1])
+targeta = open(sys.argv[2])
+k = int(sys.argv[3])
+
+kmer_query = {}
+target_gene = {}
+
+
+
+
+
+
+kmer_match_xtender

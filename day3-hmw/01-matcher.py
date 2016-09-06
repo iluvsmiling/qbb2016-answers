@@ -13,6 +13,8 @@ import fasta_fixed
 def x (target, query):
     kmer_beg = {}
     target_gene = {}
+    query_n1 = {}
+    query_n2 = {}
    
     for ident, sequence in fasta_fixed.FASTAReader(query):
         sequence = sequence.upper()
@@ -26,7 +28,7 @@ def x (target, query):
             query_n1[kmer].append(i)
             query_n2[kmer]=[]
             query_n2[kmer].append(target_gene[kmer])
-
+print 
    
     for ident, sequence in fasta_fixed.FASTAReader(target):
         sequence = sequence.upper()
@@ -37,9 +39,9 @@ def x (target, query):
                 target_gene[kmer] = []
             kmer_beg[kmer].append(i)
             target_gene[kmer].append(ident)
-    
-    query_n1 = {}
-    query_n2 = {}
+            
+###kmer_loci (kmer =[(ident, i)]); duples
+
     
     ## don't know how to do 100 loop???
     #for i, enumerate
@@ -47,12 +49,13 @@ def x (target, query):
      #   break
     
     for ident in query_match:
-        print "Identifier: ", ident
-        print "Target_name: ", query_n2[ident]
-        print "Target_start: ", kmer_beg[ident]
-        print "Query_start: ", query_n1[ident]
+        print "ID: ", ident
+        print "Target Name: ", query_n2[ident]
+        print "Target Start: ", kmer_beg[ident]
+        print "Query Start: ", query_n1[ident]
     
 target = open(sys.argv[1])
 query = open(sys.argv[2])
+k = int(sys.argv[3])
 
 
